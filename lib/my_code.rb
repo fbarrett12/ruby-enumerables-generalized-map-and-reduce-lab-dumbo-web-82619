@@ -10,7 +10,7 @@ end
 def reduce(arr, acc = 0)
   currentValue = acc
   for i in arr do
-      if i = nil 
+      if i == nil 
         p i
         currentValue = false  
         p currentValue
