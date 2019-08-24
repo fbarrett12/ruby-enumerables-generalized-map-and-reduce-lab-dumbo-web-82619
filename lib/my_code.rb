@@ -18,4 +18,5 @@ def reduce(arr, acc = 0)
     end
   end
   
+  return currentValue
 end
