@@ -10,9 +10,9 @@ end
 def reduce(arr, acc = 0)
   currentValue = acc
   for i in arr do
-      if !i.is_a? Integer 
+      if i = nil 
         p i
-        currentValue = i 
+        currentValue = false  
         p currentValue
       end
       currentValue = yield(currentValue, i)
