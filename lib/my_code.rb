@@ -9,13 +9,13 @@ end
 
 def reduce(arr, acc = 0)
   
-  if arr.length == 0 
-    puts acc 
-  end
+  # if arr.length == 0 
+  #   puts acc 
+  # end
   
   for i in arr do
     if i.is_a? Integer
-      reduce([], yield(acc, i))
+      puts reduce([], yield(acc, i))
     else 
       puts yield(acc, i)
     end
