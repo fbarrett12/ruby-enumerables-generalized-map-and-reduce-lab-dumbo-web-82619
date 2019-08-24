@@ -11,9 +11,9 @@ def reduce(arr, acc = 0)
   currentValue = acc
   for i in arr do
       if !i.is_a? Integer 
-        puts i
+        printf i
         currentValue = i 
-        puts currentValue
+        printf currentValue
       end
       currentValue = yield(currentValue, i)
   end
