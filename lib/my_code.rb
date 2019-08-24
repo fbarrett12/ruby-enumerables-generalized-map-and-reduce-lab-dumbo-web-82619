@@ -17,5 +17,5 @@ def reduce(arr, acc = 0)
       puts currentValue
   end
   
-  return currentValue
+  return true
 end
