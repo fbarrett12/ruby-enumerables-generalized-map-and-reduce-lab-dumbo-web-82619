@@ -11,10 +11,12 @@ def reduce(arr, acc = 0)
   currentValue = acc
   for i in arr do
       if !i.is_a? Integer 
+        puts i
         currentValue = i 
+        puts currentValue
       end
       currentValue = yield(currentValue, i)
-      return currentValue
+      puts currentValue
   end
   
   return currentValue
