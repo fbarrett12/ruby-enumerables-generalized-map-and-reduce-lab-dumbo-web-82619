@@ -16,7 +16,6 @@ def reduce(arr, acc = 0)
         puts currentValue
       end
       currentValue = yield(currentValue, i)
-      puts currentValue
   end
   
   return currentValue
