@@ -7,12 +7,15 @@ def map(arr)
   return new
 end
 
-def reduce(arr, start = 0)
-  result = 0
+def reduce(arr, acc = 0)
+  
+  if arr.length == 0 
+    puts acc 
+  end
+  
   for i in arr do
     if i.is_a? Integer
-
-      puts yield(start, i)
+      reduce([], yield(start, i))
     else 
       puts yield(start, i)
     end
